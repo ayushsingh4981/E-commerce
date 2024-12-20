@@ -32,6 +32,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'userauths',
+    'jazzmin',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -134,3 +136,12 @@ MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+JAZZMIN_SETTINGS ={
+    'site_header' : "Ayush shop",
+    'site_brand' : "you order,we deliver",
+    'site_logo' : "assets/imgs/theme/loading.gif",
+    'copyright' : "ayush-shop.com",
+}
+
+AUTH_USER_MODEL = 'userauths.User'
